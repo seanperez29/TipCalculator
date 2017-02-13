@@ -9,17 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var enterBillTF: UITextField!
+    @IBOutlet weak var tipPercentSlider: UISlider!
+    @IBOutlet weak var tipPercentLbl: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var tipAmountLbl: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func billAmountChanged(_ sender: Any) {
     }
-
-
+    
+    @IBAction func tipPercentChanged(_ sender: Any) {
+    }
+    
+    
 }
 

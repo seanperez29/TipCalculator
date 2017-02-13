@@ -12,6 +12,7 @@
 		91495C5F1E517DF00033BF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91495C5D1E517DF00033BF93 /* Main.storyboard */; };
 		91495C611E517DF00033BF93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91495C601E517DF00033BF93 /* Assets.xcassets */; };
 		91495C641E517DF00033BF93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91495C621E517DF00033BF93 /* LaunchScreen.storyboard */; };
+		91495C6F1E5184810033BF93 /* TipCalcBrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91495C6E1E5184810033BF93 /* TipCalcBrains.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		91495C601E517DF00033BF93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91495C631E517DF00033BF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91495C651E517DF00033BF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91495C6E1E5184810033BF93 /* TipCalcBrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalcBrains.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,9 @@
 		91495C581E517DF00033BF93 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				91495C6C1E5184620033BF93 /* Model */,
+				91495C6D1E51846B0033BF93 /* View */,
+				91495C6B1E51845A0033BF93 /* Controller */,
 				91495C591E517DF00033BF93 /* AppDelegate.swift */,
 				91495C5B1E517DF00033BF93 /* ViewController.swift */,
 				91495C5D1E517DF00033BF93 /* Main.storyboard */,
@@ -62,6 +67,28 @@
 				91495C651E517DF00033BF93 /* Info.plist */,
 			);
 			path = TipCalculator;
+			sourceTree = "<group>";
+		};
+		91495C6B1E51845A0033BF93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		91495C6C1E5184620033BF93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91495C6E1E5184810033BF93 /* TipCalcBrains.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		91495C6D1E51846B0033BF93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			files = (
 				91495C5C1E517DF00033BF93 /* ViewController.swift in Sources */,
 				91495C5A1E517DF00033BF93 /* AppDelegate.swift in Sources */,
+				91495C6F1E5184810033BF93 /* TipCalcBrains.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
