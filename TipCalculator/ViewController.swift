@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalAmountLabel: UILabel!
     @IBOutlet weak var tipAmountLbl: UILabel!
     
+    var tipCalcBrains = TipCalcBrains(billAmount: 25.0, tipPercent: 0.15)
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func tipPercentChanged(_ sender: Any) {
+    }
+    
+    func calculateTip() {
+        tipCalcBrains.tipPercent = Double(tipPercentSlider.value)
+        tipCalcBrains.billAmount = ((enterBillTF.text!) as NSString).doubleValue
+        tipCalcBrains.calculateTip()
+    }
+    
+    func updateBillUI() {
+        totalAmountLabel.text = String(format: "$%0.2f", tipCalcBrains.totalAmount)
+        tipAmountLbl.text = String(format: "$%0.2f", tipCalcBrains.tipAmount)
     }
     
     
